@@ -1,0 +1,157 @@
+/* Start Global Rules */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+p {
+    font-size: 13px;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+.heading {
+    color: hsl(0, 0%, 100%);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: inline;
+}
+.text {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 20px;
+}
+.remove-index {
+    z-index: -1;
+}
+/* End Global Rules */
+/* Start Rating State */
+.first-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 12%, 8%);
+    align-items: center;
+    justify-content: center;
+}
+.card-container {
+    position: relative;
+    margin: auto;
+    width: 22%;
+    border-radius: 8%;
+    background-color: hsl(213, 19%, 18%);
+    flex-direction: column;
+    padding: 40px 25px 40px 25px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .card-container {
+        margin: auto;
+        width: 60%;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .card-container {
+        width: 40%;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card-container {
+        width: 30%;
+    }
+} 
+.card-container .icon {
+    margin-bottom: 15px;
+}
+.card-container .icon svg {
+    background-color: hsl(213, 19%, 21%);
+    padding: 10px;
+    border-radius: 50%;
+}
+.card-container .numbers {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-container .numbers a {
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(213, 19%, 21%);
+    padding: 3% 5.5%;
+    border-radius: 47%;
+}
+.card-container .numbers a:hover {
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+.card-container #submit {
+    cursor: pointer;
+    text-align: center;
+    background-color: hsl(25, 97%, 53%);
+    padding: 3% 39%;
+    border-radius: 3ch;
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+    letter-spacing: 0.2ch;
+}
+.card-container #submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+/* End Rating State */
+/* Start Thank You State */
+.thanks-container {
+    position: absolute;
+    width: 22%;
+    border-radius: 8%;
+    background-color: hsl(213, 19%, 18%);
+    flex-direction: column;
+    padding: 40px 25px 40px 25px;
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .thanks-container {
+        margin: auto;
+        width: 60%;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .thanks-container {
+        width: 40%;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .thanks-container {
+        width: 30%;
+    }
+} 
+.thanks-container .thanks-icon {
+    margin-bottom: 15px;
+}
+.thanks-container .selected-rating {
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    display: contents;
+}
+.thanks-container .selected-rating p {
+    display: inline;
+    padding: 1% 6%;
+    padding-top: 2%;
+    border-radius: 4ch;
+    background-color: hsl(213, 19%, 21%);
+}
+.thanks-container .text {
+    text-align: center;
+}
+/* End Thank You State */
+/* Start attribution */
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+/* End attribution */
